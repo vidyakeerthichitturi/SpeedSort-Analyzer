@@ -10,5 +10,34 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+   <div class="container">
+
+    <h1>🚀 SpeedSort Analyzer</h1>
+
+    <p class="subtitle">
+        Compare Bubble Sort and Merge Sort Performance
+    </p>
+
+    <form method="POST">
+
+    <textarea
+        name="numbers"
+        placeholder="Enter numbers separated by commas or spaces">{{ numbers }}</textarea>
+
+    <div class="button-row">
+
+    <button type="submit" name="action" value="generate100">
+        Generate 100 Random Numbers
+    </button>
+
+    <button type="submit" name="action" value="generate500">
+        Generate 500 Random Numbers
+    </button>
+
+    <button type="submit" name="action" value="analyze">
+            Analyze
+    </button>
+
+</form> 
 </body>
 </html>
