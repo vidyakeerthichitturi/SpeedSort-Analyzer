@@ -39,5 +39,44 @@
     </button>
 
 </form> 
+       <div class="results">
+
+    <div class="card">
+        <h2>Bubble Sort</h2>
+
+        <p><strong>Time:</strong> {{ bubble_time }} ms</p>
+
+        <p><strong>Complexity:</strong> O(n²)</p>
+
+        <p><strong>Sorted Output:</strong></p>
+
+        <div class="output-box">
+            {{ bubble_output }}
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Merge Sort</h2>
+
+        <p><strong>Time:</strong> {{ merge_time }} ms</p>
+
+        <p><strong>Complexity:</strong> O(n log n)</p>
+
+        <p><strong>Sorted Output:</strong></p>
+
+        <div class="output-box">
+            {{ merge_output }}
+        </div>
+    </div>
+
+</div>
+    {% if winner %}
+    <div class="winner">
+        {{ winner }}
+    </div>
+    {% endif %}
+
+</div>
+
 </body>
 </html>
